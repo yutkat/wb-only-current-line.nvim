@@ -4,8 +4,8 @@ endif
 let g:loaded_wb_only_current_line = 1
 
 function! s:get_global_map(name, mode) abort
-  let s:arg = maparg(a:name, a:mode, 0 , 1)
-  if  has_key(s:args, "buffer") && s:args.buffer == 0
+  let s:map_args = maparg(a:name, a:mode, 0 , 1)
+  if  has_key(s:map_args, "buffer") && s:map_args.buffer == 0
     let s:org_map = mapcheck(a:name, a:mode)
     if !empty(s:org_map)
       return s:org_map
