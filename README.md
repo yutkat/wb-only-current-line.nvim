@@ -1,4 +1,4 @@
-# wb-only-current-line.vim
+# wb-only-current-line.nvim
 
 w,b,W,B motion for the current line only
 
